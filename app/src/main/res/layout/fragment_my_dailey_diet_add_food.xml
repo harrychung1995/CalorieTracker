@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/pic_food"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/add_food_pic" />
+
+    <TextView
+        android:id="@+id/food_category_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pic_food"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="30dp"
+        android:text="Food Category" />
+
+    <Spinner
+        android:id="@+id/food_category_spinner"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/food_category_text"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="17dp"></Spinner>
+
+    <EditText
+        android:id="@+id/insertFood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/food_category_spinner"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="16dp"
+        android:ems="10"
+        android:hint="Enter new food name" />
+
+    <Button
+        android:id="@+id/btn_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/insertFood"
+        android:layout_marginLeft="21dp"
+        android:text="Search"
+        android:layout_toRightOf="@+id/insertFood" />
+
+    <TextView
+        android:id="@+id/tv_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/insertFood"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/food_cal_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_desc"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="16dp"
+        android:text="Calories:" />
+
+    <TextView
+        android:id="@+id/food_cal_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/food_cal_txt"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="17dp"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/food_fat_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/food_cal_amount"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="16dp"
+        android:text="Fat:" />
+
+    <TextView
+        android:id="@+id/food_fat_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/food_fat_txt"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="17dp"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/food_serving_unit_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/food_fat_amount"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="16dp"
+        android:text="Serving Unit:" />
+
+    <TextView
+        android:id="@+id/food_serving_unit_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/food_serving_unit_txt"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="17dp"
+        android:textSize="30dp" />
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/food_serving_unit_value"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:text="Submit" />
+
+    <TextView
+        android:id="@+id/tv_feedback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_submit"
+        android:layout_marginLeft="16dp"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/holo_blue_dark" />
+
+</RelativeLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/pic_tracker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/tracker_pic" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="0"
+        android:layout_marginTop="17dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_below="@+id/pic_tracker">
+        <TableRow>
+            <TextView
+                android:id="@+id/text_cal_goal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Your Calories Goal:" />
+            <TextView
+                android:id="@+id/text_steps"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Total steps taken:" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/num_cal_goal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp"
+                android:text="Cal_Goal"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/num_steps"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp"
+                android:text="Steps"
+                android:textSize="30dp" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/text_cal_consumed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Total calories consumed:" />
+            <TextView
+                android:id="@+id/text_cal_burned"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Total calories burned:" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/num_cal_consumed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp"
+                android:text="Calories consumed"
+                android:textSize="30dp" />
+            <TextView
+                android:id="@+id/num_cal_burned"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp"
+                android:text="Calories burned"
+                android:textSize="30dp" />
+        </TableRow>
+    </TableLayout>
+
+
+
+
+
+
+</RelativeLayout>

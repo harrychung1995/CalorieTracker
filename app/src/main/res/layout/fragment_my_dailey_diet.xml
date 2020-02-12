@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/b_newFood"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText"
+        android:text="Add a new food" />
+
+    <TextView
+        android:id="@+id/food_category_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_below="@+id/b_newFood"
+        android:text="Food Category" />
+
+    <Spinner
+        android:id="@+id/food_category_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_below="@id/food_category_text"
+        android:layout_marginTop="10dp"></Spinner>
+
+    <TextView
+        android:id="@+id/food_item_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/food_category_spinner"
+        android:text="Food Item"/>
+
+    <Spinner
+        android:id="@+id/food_item_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/food_item_text"></Spinner>
+
+    <EditText
+        android:id="@+id/food_item_quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/food_item_spinner"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="16dp"
+        android:ems="10"
+        android:hint="Enter quantity"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/b_submit"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/food_item_quantity"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:text="Submit" />
+
+    <TextView
+        android:id="@+id/tv_feedback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/b_submit"
+        android:layout_marginLeft="16dp"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/holo_blue_dark" />
+
+
+
+</RelativeLayout>
